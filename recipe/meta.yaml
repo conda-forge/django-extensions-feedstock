@@ -1,14 +1,20 @@
+{% set name = "django-extensions" %}
+{% set version = "1.6.7" %}
+{% set md5 = "62dd2a173ad29f319b84f1b89571c060" %}
+{% set download = "https://pypi.python.org/packages/7f/da/1245fe47d1a2ca8d2d03b3cdbc886e64c94a8c2d3b6f99e3464d507a7c29/django-extensions-1.6.7.tar.gz" %}
+{% set build = 0 %}
+
 package:
-    name: django-extensions
-    version: 1.6.1
+    name: {{ name }}
+    version: {{ version }}
 
 source:
-    fn: django-extensions-1.6.1.tar.gz
-    url: https://pypi.python.org/packages/source/d/django-extensions/django-extensions-1.6.1.tar.gz
-    md5: bcd7662eb69a5cf726b927e61ee8013e
+    fn: {{ name }}-{{ version }}.tar.gz
+    url: {{ download }}
+    md5: {{ md5 }}
 
 build:
-    number: 0
+    number: {{ build }}
     script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
