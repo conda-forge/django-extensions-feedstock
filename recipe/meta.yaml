@@ -1,6 +1,6 @@
 {% set name = "django-extensions" %}
-{% set version = "1.7.1" %}
-{% set md5 = "cd0560982435dab41e86ed4eca13e1e3" %}
+{% set version = "1.7.3" %}
+{% set sha256 = "42756a62518ecb7e64e77bdf29a01515d1ddacc5bcaec2f5ae381275e65b7c10" %}
 {% set build = 0 %}
 
 package:
@@ -9,8 +9,8 @@ package:
 
 source:
     fn: {{ name }}-{{ version }}.tar.gz
-    url: https://pypi.io/packages/source/d/django-extensions/django-extensions-{{ version }}.tar.gz
-    md5: {{ md5 }}
+    url: https://github.com/django-extensions/django-extensions/archive/{{ version }}.tar.gz
+    sha256: {{ sha256 }}
 
 build:
     number: {{ build }}
