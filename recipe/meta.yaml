@@ -1,6 +1,6 @@
 {% set name = "django-extensions" %}
-{% set version = "1.7.3" %}
-{% set sha256 = "42756a62518ecb7e64e77bdf29a01515d1ddacc5bcaec2f5ae381275e65b7c10" %}
+{% set version = "1.7.4" %}
+{% set sha256 = "74e965288bef1936e08cf4b5967c9a4efb7fc79a79ae07112aeffc759a92c270" %}
 {% set build = 0 %}
 
 package:
@@ -32,7 +32,7 @@ test:
 about:
     home: http://github.com/django-extensions/django-extensions
     license: MIT
-    summary: Extensions for Django
+    summary: 'Extensions for Django.'
 
 extra:
     recipe-maintainers:
