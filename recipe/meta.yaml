@@ -1,40 +1,41 @@
 {% set name = "django-extensions" %}
-{% set version = "1.7.4" %}
-{% set sha256 = "74e965288bef1936e08cf4b5967c9a4efb7fc79a79ae07112aeffc759a92c270" %}
+{% set version = "1.7.5" %}
+{% set sha256 = "2687304476e550513b04d9b8e6b643ca061c72f60e5372b04f483701dfb88f1e" %}
 {% set build = 0 %}
 
 package:
-    name: {{ name }}
-    version: {{ version }}
+  name: {{ name }}
+  version: {{ version }}
 
 source:
-    fn: {{ name }}-{{ version }}.tar.gz
-    url: https://github.com/django-extensions/django-extensions/archive/{{ version }}.tar.gz
-    sha256: {{ sha256 }}
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://github.com/django-extensions/django-extensions/archive/{{ version }}.tar.gz
+  sha256: {{ sha256 }}
 
 build:
-    number: {{ build }}
-    script: python setup.py install --single-version-externally-managed --record record.txt
+  number: {{ build }}
+  script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
-    build:
-        - python
-        - setuptools
-    run:
-        - python
-        - six >=1.2
-        - django >=1.7
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - six >=1.2
+    - django >=1.7
 
 test:
-    imports:
-        - django_extensions
+  imports:
+    - django_extensions
 
 about:
-    home: http://github.com/django-extensions/django-extensions
-    license: MIT
-    summary: 'Extensions for Django.'
+  home: http://github.com/django-extensions/django-extensions
+  license: MIT
+  license_file: LICENSE
+  summary: 'Extensions for Django.'
 
 extra:
-    recipe-maintainers:
-        - ocefpaf
-        - kwilcox
+  recipe-maintainers:
+    - ocefpaf
+    - kwilcox
