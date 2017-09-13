@@ -14,9 +14,7 @@ Summary: Extensions for Django.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/django-extensions-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/django-extensions-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/django-extensions-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/django-extensions-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/django-extensions-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/django-extensions-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/django-extensions-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/django-extensions-feedstock)
 
 Current release info
 ====================
