@@ -1,7 +1,7 @@
 {% set name = "django-extensions" %}
 
-{% set version = "2.0.3" %}
-{% set sha256 = "4cbea2156c96b1a3e78aed96b605096d23d16a84b0114670cbd6f9319bbb0d84" %}
+{% set version = "2.0.5" %}
+{% set sha256 = "1f424a7f87974c2e2602b8b41cae52eb08105523f0c70320203abf58bcb84404" %}
 {% set build = 0 %}
 
 package:
