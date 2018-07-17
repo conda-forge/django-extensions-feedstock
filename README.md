@@ -14,12 +14,15 @@ Summary: Extensions for Django.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/django-extensions-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/django-extensions-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/django-extensions-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/django-extensions-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/django-extensions/badges/version.svg)](https://anaconda.org/conda-forge/django-extensions)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/django-extensions/badges/downloads.svg)](https://anaconda.org/conda-forge/django-extensions)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-django--extensions-green.svg)](https://anaconda.org/conda-forge/django-extensions) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/django-extensions.svg)](https://anaconda.org/conda-forge/django-extensions) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/django-extensions.svg)](https://anaconda.org/conda-forge/django-extensions) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/django-extensions.svg)](https://anaconda.org/conda-forge/django-extensions) |
 
 Installing django-extensions
 ============================
