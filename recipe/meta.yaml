@@ -1,4 +1,4 @@
-{% set version = "2.1.2" %}
+{% set version = "1.5.0" %}
 
 package:
   name: django-extensions
@@ -6,11 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/d/django-extensions/django-extensions-{{ version }}.tar.gz
-  sha256: 1f626353a11479014bfe0d77e76d8f866ebca1bb5d595cb57b776230b9e0eb92
+  sha256: 2e44532500f3720e5b7b4e3ac483fa6e0c5e3feadc132791f08b6ed4ee9ca704
 
 build:
   number: 0
-  noarch: python
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
@@ -20,9 +19,10 @@ requirements:
   run:
     - python
     - six >=1.2
-    - django >=1.7
-    - typing
-
+		# Pinning Django to versions not failing the testsuite
+    - django ==1.8.* #[py35 or py36]
+    - django <=1.8.* #[py27 or py34]
+  
 test:
   imports:
     - django_extensions
