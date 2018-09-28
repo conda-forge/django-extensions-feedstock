@@ -10,6 +10,7 @@ source:
 
 build:
   number: 0
+  noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
@@ -20,8 +21,7 @@ requirements:
     - python
     - six >=1.2
     # Pinning Django to versions not failing the testsuite
-    - django ==1.8  # [py3k]
-    - django <=1.8  # [py2k]
+    - django <=1.8
   
 test:
   imports:
@@ -31,7 +31,7 @@ about:
   home: http://github.com/django-extensions/django-extensions
   license: MIT
   license_file: LICENSE
-  summary: 'Extensions for Django.'
+  summary: 'Extensions for Django'
 
 extra:
   recipe-maintainers:
