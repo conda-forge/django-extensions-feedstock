@@ -7,7 +7,7 @@ Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: Extensions for Django.
+Summary: Extensions for Django
 
 
 
