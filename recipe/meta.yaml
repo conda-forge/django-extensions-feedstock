@@ -19,7 +19,7 @@ requirements:
   run:
     - python
     - six >=1.2
-		# Pinning Django to versions not failing the testsuite
+    # Pinning Django to versions not failing the testsuite
     - django ==1.8 #[py3k]
     - django <=1.8 #[py2k]
   
