@@ -1,4 +1,4 @@
-{% set version = "2.2.8" %}
+{% set version = "2.2.9" %}
 
 package:
   name: django-extensions
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/d/django-extensions/django-extensions-{{ version }}.tar.gz
-  sha256: 2699cc1d6fb4bd393c0b5832fea4bc685f2ace5800b3c9ff222b2080f161ac04
+  sha256: 2f81b618ba4d1b0e58603e25012e5c74f88a4b706e0022a3b21f24f0322a6ce6
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -31,7 +31,7 @@ about:
   home: http://github.com/django-extensions/django-extensions
   license: MIT
   license_file: LICENSE
-  summary: 'Extensions for Django.'
+  summary: Extensions for Django.
 
 extra:
   recipe-maintainers:
