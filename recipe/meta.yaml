@@ -1,4 +1,4 @@
-{% set version = "3.0.3" %}
+{% set version = "3.0.4" %}
 
 package:
   name: django-extensions
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/d/django-extensions/django-extensions-{{ version }}.tar.gz
-  sha256: 6230898b1e1d5deb3ddab8335b2d270edb7afa4ef916a95e479a19fdfb0464cb
+  sha256: d1e94df479daf681c33f2f5647403ee904e9268b00b5506705f4c1ee0067ed1b
 
 build:
   number: 0
