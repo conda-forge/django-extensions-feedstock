@@ -5,11 +5,9 @@ Home: http://github.com/django-extensions/django-extensions
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/django-extensions-feedstock/blob/master/LICENSE.txt)
 
 Summary: Extensions for Django.
-
-
 
 Current build status
 ====================
