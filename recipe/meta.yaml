@@ -24,7 +24,6 @@ requirements:
 test:
   imports:
     - django_extensions
-    - django_extensions.admin
   commands:
     - pip check
   requires:
