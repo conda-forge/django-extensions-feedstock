@@ -15,17 +15,16 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
-    - six >=1.2
-    - django >=1.7
-    - typing
+    - python >=3.6
+    - django >=2.2
 
 test:
   imports:
     - django_extensions
+    - django_extensions.admin
   commands:
     - pip check
   requires:
