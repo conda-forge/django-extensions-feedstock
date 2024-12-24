@@ -5,20 +5,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/d/django-extensions/django-extensions-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/d/django-extensions/django-extensions-{{ version }}.tar.gz
   sha256: 44d27919d04e23b3f40231c4ab7af4e61ce832ef46d610cc650d53e68328410a
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - django >=2.2
 
 test:
@@ -28,6 +28,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: http://github.com/django-extensions/django-extensions
