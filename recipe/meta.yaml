@@ -1,15 +1,15 @@
-{% set version = "3.2.3" %}
+{% set version = "4.0" %}
 
 package:
   name: django-extensions
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/d/django-extensions/django-extensions-{{ version }}.tar.gz
-  sha256: 44d27919d04e23b3f40231c4ab7af4e61ce832ef46d610cc650d53e68328410a
+  url: https://pypi.org/packages/source/d/django-extensions/django_extensions-{{ version }}.tar.gz
+  sha256: 8524e70adf2f2d7312288d80354bbf28b9b2cff0ff02f06e586deb723f89039e
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -17,10 +17,11 @@ requirements:
   host:
     - python {{ python_min }}
     - setuptools
+    - django >=4.2
     - pip
   run:
     - python >={{ python_min }}
-    - django >=2.2
+    - django >=4.2
 
 test:
   imports:
